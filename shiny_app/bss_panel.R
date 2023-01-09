@@ -1211,25 +1211,25 @@ moduleServer_plot <- function(id) {
 
       output$module_text <- renderText({
         if (input$module_status == "all") {
-          return("of all Charité scientists give high or highest priority to open science")
+          return("of all Charité scientists attribute high or highest importance to open science")
         } else if (input$module_status == "prof") {
-          return("of Charité professors give high or highest priority to open science")
+          return("of Charité professors attribute high or highest importance to open science")
         } else if (input$module_status == "postdoc") {
-          return("of Charité scientists with a PhD give high or highest priority to open science")
+          return("of Charité scientists with a PhD attribute high or highest importance to open science")
         } else {
-          return("of Charité scientists without a PhdD give high or highest priority to open science")
+          return("of Charité scientists without a PhD attribute high or highest importance to open science")
         }
       })
 
       output$module_number_prio <- renderText({
         if (input$module_status == "all") {
-          return("42 %")
+          return("77 %")
         } else if (input$module_status == "prof") {
-          return("41 %")
+          return("60 %")
         } else if (input$module_status == "postdoc") {
-          return("37 %")
+          return("73 %")
         } else {
-          return("51 %")
+          return("89 %")
         }
 
       })
